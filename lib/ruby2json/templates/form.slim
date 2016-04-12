@@ -1,0 +1,20 @@
+form#converter-form.form-vertical method="POST"
+  - if error
+    .row
+      .col-lg-12
+        .alert.alert-danger role="alert"
+          = error
+  .row
+    .col-lg-12.text-center
+      button.btn.btn-primary.btn-lg type="submit" Convert
+  .row
+    .col-lg-6
+      .form-group>
+        h3 Ruby JSON/Hash:
+        textarea.form-control name="text" rows="20" style="font-family: monospace" placeholder="Place your snippet here"
+          = text
+    .col-lg-6
+      .form-group>
+        h3 Parsed JSON:
+        textarea.form-control name="json" rows="20" style="font-family: monospace" placeholder="Formatted JSON will be displayed here"
+          = json
