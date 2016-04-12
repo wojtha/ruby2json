@@ -3,9 +3,8 @@ Ruby2JSON converter
 
 Simple online tool to convert ruby JSON/hash console output to proper JSON. For example `{"ruby"=>"json"}` translates as `{ "ruby" : "json" }`
 
-[![Ruby2JSON app preview](/assets/gherkin_vs_mouse_melon.png?raw=true)](http://ruby2json.herokuapp.com/)
-
-### [https://ruby2json.herokuapp.com/](https://ruby2json.herokuapp.com/)
+[![Ruby2JSON app preview](/assets/ruby2html_preview.png?raw=true)](http://ruby2json.herokuapp.com/)
+[http://ruby2json.herokuapp.com/](http://ruby2json.herokuapp.com/)
 
 Workflow
 --------
