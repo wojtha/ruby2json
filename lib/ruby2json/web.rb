@@ -15,11 +15,12 @@ module Ruby2JSON
 
     post '/' do
       begin
-        json = Ruby2JSON::Parser.pretty_generate params['text'] if params['text']
-        slim :form, locals: { text: params['text'], json: json, error: nil }
+        text = params['text'].to_s
+        json = Ruby2JSON::Parser.pretty_generate text unless text.empty?
+        slim :form, locals: { text: text, json: json, error: nil }
       rescue JSON::ParserError => e
         error = "JSON parser error: #{e.message}"
-        slim :form, locals: { text: params['text'], json: json, error: error }
+        slim :form, locals: { text: text, json: json, error: error }
       end
     end
 
