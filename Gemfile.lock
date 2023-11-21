@@ -4,6 +4,9 @@ GEM
     json (2.3.1)
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.6.1)
+    puma (6.4.0)
+      nio4r (~> 2.0)
     rack (2.2.4)
     rack-protection (2.2.3)
       rack
@@ -24,6 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   json
+  puma
   sinatra
   slim
 
