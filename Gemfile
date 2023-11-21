@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '=> 2.7.2'
+# Setting up the ruby version doesn't work well with railway.app docker build
+# ruby '=> 2.7.2'
 
 gem 'puma'
 gem 'sinatra'
